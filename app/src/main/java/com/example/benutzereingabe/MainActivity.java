@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     // Toast-Meldung, wenn Felder leer sind
                     Toast.makeText(MainActivity.this, "Bitte alle Felder ausfüllen", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Hier kannst du die Daten weiter verarbeiten oder an eine andere Activity übergeben
+                    // Hier Daten an eine andere Activity übergeben
                     Intent intent = new Intent(MainActivity.this, AnzeigeActivity.class);
                     intent.putExtra("benutzerName", name);
                     intent.putExtra("benutzerAlter", age);
